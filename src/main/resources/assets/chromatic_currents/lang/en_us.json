@@ -1,0 +1,18 @@
+{
+  "block.chromatic_currents.orangestone_wire": "Orangestone Dust",
+  "block.chromatic_currents.yellowstone_wire": "Yellowstone Dust",
+  "block.chromatic_currents.greenstone_wire": "Greenstone Dust",
+  "block.chromatic_currents.limestone_wire": "Limestone Dust",
+  "block.chromatic_currents.cyanstone_wire": "Cyanstone Dust",
+  "block.chromatic_currents.lightbluestone_wire": "Lightbluestone Dust",
+  "block.chromatic_currents.bluestone_wire": "Bluestone Dust",
+  "block.chromatic_currents.magentastone_wire": "Magentaestone Dust",
+  "block.chromatic_currents.pinkstone_wire": "Pinkstone Dust",
+  "block.chromatic_currents.purplestone_wire": "Purplestone Dust",
+  "block.chromatic_currents.whitestone_wire": "Whitestone Dust",
+  "block.chromatic_currents.blackstone_wire": "Blackstone Dust",
+  "block.chromatic_currents.brownstone_wire": "Brownstone Dust",
+  "block.chromatic_currents.graystone_wire": "Graystone Dust",
+  "block.chromatic_currents.lightgraystone_wire": "Lightgraystone Dust",
+  "itemGroup.chromatic_currents.other": "Chromatic Currents"
+}

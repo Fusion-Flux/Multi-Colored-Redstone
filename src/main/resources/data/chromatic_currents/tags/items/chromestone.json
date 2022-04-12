@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone",
+    "chromatic_currents:blackstone",
+    "chromatic_currents:bluestone",
+    "chromatic_currents:brownstone",
+    "chromatic_currents:cyanstone",
+    "chromatic_currents:graystone",
+    "chromatic_currents:greenstone",
+    "chromatic_currents:lightbluestone",
+    "chromatic_currents:lightgraystone",
+    "chromatic_currents:limestone",
+    "chromatic_currents:magentastone",
+    "chromatic_currents:orangestone",
+    "chromatic_currents:pinkstone",
+    "chromatic_currents:purplestone",
+    "chromatic_currents:whitestone",
+    "chromatic_currents:yellowstone"
+  ]
+}
