@@ -4,16 +4,12 @@
   "version": "${version}",
 
   "name": "Chromatic Currents",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This is a mod that adds in new colors of redstone wire!",
   "authors": [
     "Fusion Flux"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/chromatic_currents/icon.png",
 
   "environment": "*",
@@ -26,7 +22,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "chromatic_currents.mixins.json"
   ],
 
   "depends": {

@@ -10,28 +10,24 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Vec3d;
 
 public class ChromaticCurrentsClient implements ClientModInitializer {
-    public static void registerBlockRenderLayers() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BLUESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.GREENSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.YELLOWSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.ORANGESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.PURPLESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIGHTBLUESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIMESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.CYANSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.WHITESTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BLACKSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.GRAYSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIGHTGRAYSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.MAGENTASTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.PINKSTONE_WIRE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BROWNSTONE_WIRE, RenderLayer.getTranslucent());
-    }
     @Override
     public void onInitializeClient() {
-        //ColoredRedstoneWire.COLORS[state.get(Properties.POWER)]
-        //FluidRender.setupFluidRendering(FluxTechBlocks.ENDURIUM, FluxTechBlocks.ENDURIUM_FLOWING, FLUID_STILL, FLUID_FLOWING, 0x084537);
-        registerBlockRenderLayers();
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BLUESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.GREENSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.YELLOWSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.ORANGESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.PURPLESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIGHTBLUESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIMESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.CYANSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.WHITESTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BLACKSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.GRAYSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.LIGHTGRAYSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.MAGENTASTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.PINKSTONE_WIRE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ChromaticCurrents.BROWNSTONE_WIRE, RenderLayer.getCutout());
+
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> ColoredRedstoneWire.getWireColorGood(state.get(Properties.POWER),new Vec3d(0,0,1)), ChromaticCurrents.BLUESTONE_WIRE);
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> ColoredRedstoneWire.getWireColorGood(state.get(Properties.POWER),new Vec3d(0,.5,0)), ChromaticCurrents.GREENSTONE_WIRE);
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> ColoredRedstoneWire.getWireColorGood(state.get(Properties.POWER),new Vec3d(1,1,0)), ChromaticCurrents.YELLOWSTONE_WIRE);
