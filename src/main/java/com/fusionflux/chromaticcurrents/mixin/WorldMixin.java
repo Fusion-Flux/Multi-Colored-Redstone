@@ -12,8 +12,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import javax.swing.*;
-
 @Mixin(World.class)
 public abstract class WorldMixin {
 
@@ -28,7 +26,7 @@ public abstract class WorldMixin {
 		if(blockStateTest.getBlock() instanceof ColoredRedstoneWire) {
 
 			if(!(this.getBlockState(pos).getBlock() instanceof AbstractRedstoneGateBlock) && this.getBlockState(pos).getBlock() != Blocks.LEVER&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_TORCH&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_BLOCK
-					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof AbstractButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
+					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof ButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
 			for (Direction upoffsetcheck : Direction.Type.HORIZONTAL) {
 				if (this.getBlockState(pos.offset(upoffsetcheck)).getBlock() instanceof ColoredRedstoneWire) {
 					if (this.getBlockState(pos.offset(upoffsetcheck)).getBlock() != blockStateTest.getBlock()) {
@@ -40,7 +38,7 @@ public abstract class WorldMixin {
 			}
 
 			if(!(this.getBlockState(pos).getBlock() instanceof AbstractRedstoneGateBlock) && this.getBlockState(pos).getBlock() != Blocks.LEVER&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_TORCH&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_BLOCK
-					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof AbstractButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
+					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof ButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
 			if (this.getBlockState(pos.offset(direction)).getBlock() instanceof ColoredRedstoneWire) {
 				if (this.getBlockState(pos.offset(direction)).getBlock() != blockStateTest.getBlock()) {
 					cir.setReturnValue(0);
@@ -91,7 +89,7 @@ public abstract class WorldMixin {
 
 		if(blockStateTest.getBlock() instanceof RedstoneWireBlock) {
 			if(!(this.getBlockState(pos).getBlock() instanceof AbstractRedstoneGateBlock) && this.getBlockState(pos).getBlock() != Blocks.LEVER&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_TORCH&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_BLOCK
-					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof AbstractButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
+					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof ButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
 			for (Direction upoffsetcheck : Direction.Type.HORIZONTAL) {
 				if (this.getBlockState(pos.offset(upoffsetcheck)).getBlock() instanceof RedstoneWireBlock) {
 					if (this.getBlockState(pos.offset(upoffsetcheck)).getBlock() != blockStateTest.getBlock()) {
@@ -103,7 +101,7 @@ public abstract class WorldMixin {
 			}
 
 			if(!(this.getBlockState(pos).getBlock() instanceof AbstractRedstoneGateBlock) && this.getBlockState(pos).getBlock() != Blocks.LEVER&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_TORCH&& this.getBlockState(pos).getBlock() != Blocks.REDSTONE_BLOCK
-					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof AbstractButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
+					&& this.getBlockState(pos).getBlock() != Blocks.OBSERVER && !(this.getBlockState(pos).getBlock() instanceof ButtonBlock) && !(this.getBlockState(pos).getBlock() instanceof AbstractPressurePlateBlock))
 			if (this.getBlockState(pos.offset(direction)).getBlock() instanceof RedstoneWireBlock) {
 				if (this.getBlockState(pos.offset(direction)).getBlock() != blockStateTest.getBlock()) {
 					cir.setReturnValue(0);
